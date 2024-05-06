@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Detran</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: auto;
+            border-radius: 20px;
+            background-color: lightgray;
+            color: black;
+            width: 100vw;
+
+        }
+
+        h1 {
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(135, 206, 250, 0.415);
+            width: 300px;
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            text-shadow: 2px 2px 10px black;
+            color: white;
+            box-shadow: 2px 2px 19px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+   Velocidade do carro <input type="number" name="txtvel" id="txtvel"> km/h
+   <input type="button" value="Verificar" onclick="calcular()">
+   <div id="res">
+
+
+   </div>
+   <script>
+    function calcular() {
+         var txtv = window.document.getElementById('txtvel')
+         var res = window.document.getElementById('res')
+         var vel = Number(txtv.value)
+         res.innerHTML = `<p>sua velocidade atual e de ${vel}km/h</p>`
+         if (vel > 100) {
+            res.innerHTML += `<p>voce foi multado!</p>`
+         }
+         else {
+            res.innerHTML += `Nao ultrapasse 100km/h se nao sera <strong>Multado!</strong>`
+         }
+
+    }
+   </script>
+</body>
+</html>
