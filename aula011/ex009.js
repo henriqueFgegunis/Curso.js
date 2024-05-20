@@ -7,3 +7,4 @@ if (pais == 'Brasil') {
 else  {
     console.log(`Voce e Estrangeiro8`)
 }
+ 
