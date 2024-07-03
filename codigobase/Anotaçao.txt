@@ -5,8 +5,34 @@
 
 <script>
  window.alert('<Erro>Cuidado enviando seus dados para outro client...');
- window.confirm('Liberar seu cu')
+ window.confirm('Liberar seu ')
  window.prompt('QUAL E SEU NOME? ')
+ 
+
+
+switch (expresao) todo switch nessecita de um break 
+
+case valor 1 
+      
+
+
+break
+case valor 2 
+
+
+
+break
+case valor 3
+
+
+break
+
+default
+
+break
+
+
+
 </script>
 ....................................................................................
 ....................................................................................
