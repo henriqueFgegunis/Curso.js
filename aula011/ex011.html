@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript Detran</title>
+    <title>Qual a sua nacionalidade</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -33,27 +33,32 @@
     </style>
 </head>
 <body>
-    <h1>Sistema de multas</h1>
-   Velocidade do carro <input type="number" name="txtvel" id="txtvel"> km/h
-   <input type="button" value="Verificar" onclick="calcular()">
-   <div id="res">
+    <h1>Qual e  o seu pais?</h1>
+    Seu pais <input type="text" id="txtv1">
+    
+    <input type="button" value="Verificar"
+    onclick="saber()">
+    <div id="res"> 
 
 
-   </div>
-   <script>
-    function calcular() {
-         var txtv = window.document.getElementById('txtvel')
-         var res = window.document.getElementById('res')
-         var vel = Number(txtv.value)
-         res.innerHTML = `<p>sua velocidade atual e de ${vel}km/h</p>`
-         if (vel > 100) {
-            res.innerHTML += `<p>voce foi multado!</p>`
-         }
-         
-            res.innerHTML += `Nao ultrapasse 100km/h se nao sera <strong>Multado!</strong>`
-         
+    </div>
+ <script>
+   function saber(){
+   var txtv = window.document.getElementById("txtv1")
+   
+   var res = window.document.getElementById('res')
+   
+   var pais = (txtv.value)
 
-    }
-   </script>
+   res.innerHTML += `<p>vivendo em pais ${pais}</p> `
+
+   if (pais == 'brasil') {
+    res.innerHTML += `<p>voce e brasileiro</p>`
+   }
+   else {
+    res.innerHTML += `<p>voce e estrangeiro</p>`
+   }
+   }
+ </script>
 </body>
 </html>
