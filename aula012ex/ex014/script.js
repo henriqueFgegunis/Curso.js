@@ -1,1 +1,8 @@
-alert(`Hello friends, welcome to the site that you will be hacked in less than 1 thousandth...`)
+function carregar(){
+    var msg = window.document.getElementById(msg)
+    var imagem = window.document.getElementById(imagem)
+    var data = new Date()
+    var hora = data.getHours()
+    msg.innerHTML = `agora sao ${hora} horas.`
+}
+
