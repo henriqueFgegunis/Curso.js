@@ -1,1 +1,0 @@
-alert(`Hello friends, welcome to the site that you will be hacked in less than 1 thousandth...`)
