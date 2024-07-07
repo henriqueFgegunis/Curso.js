@@ -34,6 +34,28 @@ break
 
 
 </script>
+
+Data type 
+ comando : typeof
+number ... numeros inteiros e numeros reias
+string ... conjuçao de letras e numeros Dentro de ``ou "ou'
+boolean ... false true
+function ... funçao
+ANOTAÇAO
+
+null ...Nada
+= ...recebe
+== ...igual
+=== 
+
+Comentarios 
+
+// para uma unica linha
+
+/*para mais
+de uma linha*/ 
+
+
 ....................................................................................
 ....................................................................................
 ....................................................................................
