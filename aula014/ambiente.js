@@ -1,6 +1,3 @@
-var c = 1 
-while (c <= 1000000000000000000000000000000000000) {
-console.log('processando...')
-c++
+for(var c = 1;c<=10;c++){
+    console.log(`oi teste ${c}`)
 }
-    
